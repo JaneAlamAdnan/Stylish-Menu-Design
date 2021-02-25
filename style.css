@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding: 0
+}
+body{
+	font-family: poppins;
+	background: #232a30;
+}
+#nav-container{
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background: #fafafa;
+	left:-310px;
+	transition:2s;
+	box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+}
+#nav-container.active{
+	left:0;
+}
+#nav-container ul li{
+	list-style: none;
+	font-size: 20px;
+	padding: 20px 25px;
+	color: #232a30;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+	transition: 0.5s;
+}
+#nav-container ul li:hover{
+	background: #232a30;
+	color: #fafafa;
+}
+#nav-container .menu-btn{
+	position: absolute;
+	top:25px;
+	left:340px;
+	cursor: pointer;
+}
+#line1,#line2{
+	width:40px;
+	height: 5px;
+	margin-top: 7.5px;
+	border-radius: 10px;
+	background: white;
+	transition: 0.5s;
+}
+#line3{
+	font-size: 13px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 4px;
+	transition: 0.5s;
+}
+#loading1.xxx{
+	animation:loading1 1.5s forwards;
+}
+@keyframes loading1{
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);margin-left:-20px;}
+	40% {transform: translateY(-5px);}
+	60% {transform: translateY(-5px);}
+}
+#line1.yyy{
+	animation:line1 1.5s forwards;
+}
+@keyframes line1{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-45deg);
+	}
+}
+#loading2.mmm{
+	animation:loading2 1.5s forwards;
+}
+@keyframes loading2 {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+		margin-left:-20px;
+	}
+	40% {transform: translateY(-5px);}
+	60% {transform: translateY(-5px);}
+}
+
+#line2.nnn{
+	animation:line2 1.5s forwards;
+}
+
+@keyframes line2{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(45deg);
+		margin-top: -4px;
+	}
+}
+#menutext.aaa{
+	animation: menutext 1s forwards;
+	margin-left: -18px;
+}
+@keyframes menutext{
+	0%{
+		margin-top:0px;
+	}
+	50%{
+		transform: translateY(-15px);
+	}
+	100%{
+		opacity: 0;
+	}
+}
